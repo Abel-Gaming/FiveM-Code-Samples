@@ -9,10 +9,10 @@ namespace MyResourceNameClient
     {
         public Class1()
         {
-            API.RegisterCommand("Discord", new Action(help), false);
+            API.RegisterCommand("Discord", new Action(discord), false);
         }
 
-        public static void help()
+        public static void discord()
         {
             Screen.ShowNotification("Discord URL here"); //Discord URL will show as a notification when the player does /Discord
         }
