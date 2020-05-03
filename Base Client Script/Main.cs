@@ -1,9 +1,6 @@
 using CitizenFX.Core;
-using CitizenFX.Core.Native;
-using CitizenFX.Core.UI;
-using System;
 
-namespace MyResourceNameClient
+namespace Tutorial
 {
     public class Main : BaseScript
     {
@@ -14,7 +11,7 @@ namespace MyResourceNameClient
 
         public Main()
         {
-            
+
         }
     }
 }
