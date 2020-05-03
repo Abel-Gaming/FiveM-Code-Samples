@@ -14,14 +14,7 @@ namespace MyResourceNameClient
 
         public Main()
         {
-            EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
-        }
-
-        private void OnClientResourceStart(string resourceName)
-        {
-            if (API.GetCurrentResourceName() != resourceName) return;
             
-            Screen.ShowNotification("Running" + name + "~n~" + "Current Version: " + version);
         }
     }
 }
