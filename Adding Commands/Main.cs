@@ -3,18 +3,19 @@ using CitizenFX.Core.Native;
 using CitizenFX.Core.UI;
 using System;
 
-namespace MyResourceNameClient
+namespace TutorialProjectClient
 {
-    public class Class1 : BaseScript
+    public class Main : BaseScript
     {
-        public Class1()
+        public Main()
         {
-            API.RegisterCommand("Discord", new Action(discord), false);
+            API.RegisterCommand("street", new Action(DisplayStreet), false);
         }
 
-        public static void discord()
+        private static void DisplayStreet()
         {
-            Screen.ShowNotification("Discord URL here"); //Discord URL will show as a notification when the player does /Discord
+            var street = World.GetStreetName(Game.Player.Character.Position);
+            Screen.ShowNotification("Current Street: " + street);
         }
     }
 }
