@@ -4,9 +4,9 @@ using CitizenFX.Core.UI;
 using System.Threading.Tasks;
 using System;
 
-namespace TrunkInventory.Commands
+namespace PROJECTNAME
 {
-    public class CreateCommands : BaseScript
+    public class Main : BaseScript
     {
         public CreateCommands()
         {
